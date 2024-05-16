@@ -16,6 +16,11 @@ bookmarkButton.addEventListener("click", toggleBookmark);
 
 function toggleAnswere() {
   answereQuestion.classList.toggle("card__answer--active");
+  if (answereQuestion.classList.contains("card__answer--active")) {
+    answereButton.textContent = "Hide Answere";
+  } else {
+    answereButton.textContent = "Show Answere";
+  }
 }
 
 answereButton.addEventListener("click", toggleAnswere);
